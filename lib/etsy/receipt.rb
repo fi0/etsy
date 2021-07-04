@@ -11,7 +11,7 @@ module Etsy
     attributes :quantity, :listing_id, :name, :first_line, :second_line, :city, :state, :zip, :country_id,
                :formatted_address, :payment_method, :payment_email, :buyer_email,
                :message_from_seller, :message_from_buyer, :was_paid, :was_shipped,
-               :grandtotal, :adjusted_grandtotal, :buyer_adjusted_grandtotal, :shipments
+               :grandtotal, :adjusted_grandtotal, :buyer_adjusted_grandtotal, :shipments, :currency_code, :total_vat_cost
 
     def self.find(*identifiers_and_options)
       find_one_or_more('receipts', identifiers_and_options)
